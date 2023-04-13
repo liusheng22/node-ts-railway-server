@@ -1,4 +1,5 @@
 import env from "./env"
+console.log('env =>', env)
 
 // @ts-ignore
 process.env = {
