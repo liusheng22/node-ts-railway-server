@@ -1,9 +1,15 @@
 {
-	"javascript": {
-		"formatter": {
-			"semicolons": "asNeeded"
-		}
-	},
-	"organizeImports": { "enabled": true },
-	"files": { "ignore": [".vscode/*", "dist/*", "node_modules/*"] }
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "semicolons": "asNeeded"
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentSize": 2
+  },
+  "organizeImports": { "enabled": true },
+  "files": { "ignore": [".vscode/*", "dist/*", "node_modules/*"] }
 }
