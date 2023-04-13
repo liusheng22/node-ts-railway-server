@@ -15,7 +15,12 @@
 		"start": "node dist"
 	},
 	"dependencies": {
-		"esbuild": "^0.17.16"
+		"@apollo/server": "^4.6.0",
+		"esbuild": "^0.17.16",
+		"graphql": "^16.6.0",
+		"koa": "^2.14.2",
+		"koa-bodyparser": "^4.4.0",
+		"koa-router": "^12.0.0"
 	},
 	"devDependencies": {
 		"@types/node": "^18.15.11"
