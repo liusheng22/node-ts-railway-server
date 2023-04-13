@@ -18,6 +18,8 @@ app.use(bodyParser())
 app.use(router.routes())
 app.use(router.allowedMethods())
 
+console.log('port => ', port)
+
 app.listen({ port }, () => {
 	console.log(`🚀 Server ready at http://localhost:${port}`)
 })
