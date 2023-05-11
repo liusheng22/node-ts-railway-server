@@ -16,6 +16,12 @@ router.get('/user', async (ctx, next) => {
   ctx.body = 'Hello User!'
 })
 
+router.post('/feedback', async (ctx, next) => {
+  let data = ctx.request.body
+  console.log('data =>', data)
+  ctx.body = data
+})
+
 router.get('/chat', async (ctx, next) => {
   const url = 'https://api.openai.com/v1/completions'
   const options = {
@@ -28,6 +34,7 @@ router.get('/chat', async (ctx, next) => {
     },
     body: JSON.stringify({
       model: 'text-davinci-003',
+      // gpt-3.5-turbo
       prompt: '这是一条测试消息',
       max_tokens: null,
       temperature: 1,
